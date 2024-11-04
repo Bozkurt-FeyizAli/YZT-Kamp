@@ -34,4 +34,16 @@ public class week1{
         s.close();
     }
 
+    public static void reverseNumber(int n){
+        if(n<0)
+            reverseNumber(0-n);
+        if(n<10){
+            System.out.print(n);
+            return;
+        }
+        System.out.print(n%10);
+        reverseNumber(n/10);
+        System.out.println();
+    }
+
 }
