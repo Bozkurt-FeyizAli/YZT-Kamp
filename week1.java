@@ -46,4 +46,17 @@ public class week1{
         System.out.println();
     }
 
+    public static boolean isPrime(int i){
+        if(i<0)
+            return false;
+        if(i>1&&i<4)
+            return true;
+        double sqrt=Math.sqrt(i);
+        for (int j = 2; j <sqrt ; j++) {
+            if(i%j==0)
+                return false;
+        }
+        return true;
+    }
+
 }
