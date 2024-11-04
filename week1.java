@@ -18,4 +18,20 @@ public class week1{
         return n*printProduct(n-1);
     }
 
+    public static void basamak(){
+        Scanner s= new Scanner(System.in);
+        int i=s.nextInt();
+        System.out.printf("%d sayısı,  %d badamağa sahiptir.", i, (int)Math.log10(i)+1);
+        System.out.println();
+        String sayı=Integer.toString(i);
+        for (int j = sayı.length()-1; !sayı.equals(""); j--) {
+            if(sayı.charAt(0)=='0')
+                continue;
+            System.out.print((sayı.charAt(0)-48)*(int)Math.pow(10, j)+" + ");
+            sayı=sayı.substring(1);
+        }
+        System.out.println();
+        s.close();
+    }
+
 }
