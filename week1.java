@@ -46,6 +46,17 @@ public class week1{
         System.out.println();
     }
 
+    public static void printSumOdd(int n){
+        int result=0;
+        Scanner s= new Scanner(System.in);
+        while (result>=0) {
+            int a=s.nextInt();
+            if(a%2==1)
+            result+=a;
+        }
+        System.out.println(result);
+    }
+
     public static boolean isPrime(int i){
         if(i<0)
             return false;
@@ -58,5 +69,6 @@ public class week1{
         }
         return true;
     }
+
 
 }
