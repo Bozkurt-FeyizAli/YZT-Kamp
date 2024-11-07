@@ -55,6 +55,7 @@ public class week1{
             result+=a;
         }
         System.out.println(result);
+        s.close();
     }
 
     public static boolean isPrime(int i){
